@@ -26,4 +26,8 @@ const getAll = () => {
     return comidas
 }
 
-module.exports = {getAll}
+const add = (comida) => {
+    comidas.pratosFavoritos.push(comida)
+}
+
+module.exports = {getAll, add}
