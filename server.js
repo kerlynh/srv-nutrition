@@ -18,8 +18,10 @@ servidor.post('/comidas', (request, response) => {
 
 servidor.delete('/comidas/:id',(request, response) => {
   controller.remove(request.params.id)
-  response.sendStatus(204)
+  response.send(204)
 })
+
+
 
 servidor.listen(3000)
 console.log('servidorzinho rodando na porta 3000')

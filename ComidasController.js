@@ -1,4 +1,4 @@
- const repository = require('./ComidasRepository')
+  const repository = require('./ComidasRepository')
 
 const getAll = () => {
     return repository.pratos
@@ -11,9 +11,10 @@ const add = (comida) => {
 
 const remove = (id) => {
   let comidasRestantes = getAll()
-    getAll().pratosFavoritos = comidasRestantes.pratosFavoritos.filter((comida) => {
-      return comida.id !== id
+
+  getAll().pratosFavoritos = comidasRestantes.pratosFavoritos.filter((comida) => {
+    return comida.id !== id
   }) 
 }
 
-module.exports = {pratos, getAll, add, remove}
+module.exports = {getAll, add, remove}
