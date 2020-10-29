@@ -17,4 +17,6 @@ const remove = (id) => {
   }) 
 }
 
+
+// teste
 module.exports = {getAll, add, remove}
